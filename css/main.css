@@ -1,0 +1,137 @@
+* {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: relative;
+    z-index: 3000;
+    opacity: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    position: relative;
+    z-index: 3000;
+    opacity: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner{
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 350px;
+}
+
+.text{
+    margin: 20px;
+}
+
+.text p {
+    width: 450px;
+    margin: 15px;
+    font-size: px;
+}
+
+.text h1{
+    font-size: 45px;
+    margin: 7px;
+}
+
+header a{
+    text-decoration: none;
+    color: #47814A;
+    margin:20px;
+    font-size: 20px;
+
+}
+
+#about {
+    background: #47814A;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader{
+    width: 100vw;
+    height: 100vh;
+    background: #47814A;
+    position: fixed;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading_text{
+    font-weight: 700;
+    color: #F3F3DE;
+    letter-spacing: 30px;
+    position: relative;
+    top: -40px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.pace {
+    pointer-events: none;
+    user-select: none;
+    z-index: 2000;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    border: 0;
+    height: 1px;
+    overflow: hidden;
+    background-color: #47814A;
+}
+
+.pace .pace-progress{
+    max-width: 400px;
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    background: #F3F3DE;
+}
+
+@media only screen and (max-width: 820px) {
+    .banner{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .text{
+        text-align: center;
+        width: auto;
+    }
+
+    .text p {
+        width: auto;
+    }
+
+    .text .intro {
+        width: fit-content;
+    }
+
+    header{
+        display: none;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hausmann Tom</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loading_text">
+            LOADING
+        </div>
+    </div>
+    <header>
+        <a href="#about">About</a>
+        <a href="#contact">Experience</a>
+        <a href="#contact">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </header>
+    <section class="banner">
+        <img src="face.png" alt="">
+        <div class="text">
+            <p>Hello, i'm</p>
+            <h1>Tom Hausmann, <br> Young <span style="color: #47814A">website builder</span></h1>
+            <p class="intro">I’m always searching for new projects and opportunities. I’m young, ambitious and motivated to build your website or your app ! 
+                I’m currently learning coding in Poitiers, France.</p>
+        </div>
+    </section>
+    <section id="about">
+        <h1>test</h1>
+    </section>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            PaceOptions = {
+                ajax: true,  //Checks AJAX requests
+                document: true //Document is ready
+            };
+            Pace.on('done', () => {
+                gsap.timeline()
+                .to('.pace', {
+                    transform: 'scale(10, 1)',
+                    duration: 3 
+                }, "+=.2")
+                .to('header', {
+                    opacity: 1,
+                    ease: "BezierEasing(0.19,1,0.22,1)"
+                },)
+                .to('section', {
+                    opacity: 1,
+                    ease: "BezierEasing(0.19,1,0.22,1)"
+                },)
+                .to('.pace', {
+                    duration: 1, 
+                    height: "100%"
+                }, "-=2.5"  )
+                .to('.loading_text', {
+                    delay: .2,
+                    duration: 3,
+                    opacity: 0,
+                    yPercent: -400,
+                    ease: "BezierEasing(0.19,1,0.22,1)"
+                }, 'p')
+            });
+        </script>
+        <script src="/js/main.js"></script>
+    </footer>
+</body>
+</html>
