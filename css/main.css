@@ -92,7 +92,7 @@ header a{
     left: 0;
     right: 0;
     bottom: 0;
-    width: 400px;
+    width: 200px;
     border: 0;
     height: 1px;
     overflow: hidden;
@@ -130,8 +130,26 @@ header a{
         width: fit-content;
     }
 
-    header{
-        display: none;
-        opacity: 0;
-    }
 }
+
+
+@media only screen and (max-width: 450PX) {
+    header{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .banner img{
+        width: 50vw;
+        height: auto;
+    }
+
+    .banner{
+        margin-top: 30px;
+    }
+
+    .banner h1{
+        font-size: 30px;
+    }
+}   
