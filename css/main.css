@@ -16,6 +16,19 @@ header{
     justify-content: center;
 }
 
+.icons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icons img{
+    margin-bottom: 8px;
+}
+
 section{
     position: relative;
     z-index: 3000;
@@ -56,11 +69,12 @@ header a{
 
 #about {
     background: #47814A;
-    height: 700px;
+    height: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
+
 
 .preloader{
     width: 100vw;
@@ -77,7 +91,7 @@ header a{
     color: #F3F3DE;
     letter-spacing: 30px;
     position: relative;
-    top: -30px;
+    top: -20px;
     pointer-events: none;
     user-select: none;
 }
@@ -116,7 +130,7 @@ header a{
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .text{
         text-align: center;
         width: auto;
@@ -130,17 +144,19 @@ header a{
         width: fit-content;
     }
 
-}
-
-
-@media only screen and (max-width: 450PX) {
     header{
         display: grid;
         justify-content: center;
         text-align: center;
     }
 
-    .banner img{
+}
+
+
+@media only screen and (max-width: 450PX) {
+
+
+    #face{
         width: 50vw;
         height: auto;
     }
@@ -151,5 +167,10 @@ header a{
 
     .banner h1{
         font-size: 30px;
+    }
+
+    .icons{
+        flex-direction: row;
+        position: initial;
     }
 }   
