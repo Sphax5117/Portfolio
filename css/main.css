@@ -49,7 +49,7 @@ section{
 }
 
 .text p {
-    width: 450px;
+    width: 500px;
     margin: 15px;
     font-size: px;
 }
@@ -71,8 +71,36 @@ header a{
     background: #47814A;
     height: 800px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    overflow-x: hidden; 
+    overflow-y: visible;
+    position: relative;
+    width: 100%;
+}
+
+.circleTopLeft{
+    position: absolute;
+    top: -180px;
+    left: -225px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: #FCE7BF;
+
+}
+
+.circleBottomRight{
+    position: absolute;
+    top: 450px;
+    left: 1200px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #FCE7BF;
+}
+.container{
+    z-index: 1500;
 }
 
 
