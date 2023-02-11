@@ -90,8 +90,8 @@ header a{
     font-weight: 700;
     color: #F3F3DE;
     letter-spacing: 30px;
-    position: relative;
-    top: -20px;
+    margin-bottom: 50px;
+    justify-content: center;
     pointer-events: none;
     user-select: none;
 }
