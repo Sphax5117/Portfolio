@@ -202,6 +202,10 @@ header a{
         text-align: center;
     }
 
+    .loading_text{
+        margin-bottom: 100px;
+    }
+
 }
 
 
