@@ -154,6 +154,14 @@ header a{
     opacity: 1;
 }
 
+.cardTitle{
+    text-align: center;
+    opacity: 1;
+}
+
+.container .card:hover .cardTitle{
+    opacity: 0;
+}
 
 .preloader{
     width: 100%;
@@ -170,7 +178,7 @@ header a{
     font-weight: 700;
     color: #F3F3DE;
     letter-spacing: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     justify-content: center;
     pointer-events: none;
     user-select: none;
