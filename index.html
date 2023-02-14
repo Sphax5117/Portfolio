@@ -131,7 +131,16 @@
                 }, 'p')
             });
         </script>
-        <script src="/js/main.js"></script>
     </footer>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 10,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.5
+    });
+    </script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

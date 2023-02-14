@@ -96,7 +96,7 @@ header a{
 .circleRight{
     position: absolute;
     top: 800px;
-    right: -50px;
+    right: -150px;
     transform: translateY(-50%);
     width: 600px;
     height: 600px;
@@ -109,21 +109,49 @@ header a{
 
 .container{
     z-index: 15;
-    position: absolute;
+    position: relative;
     display: flex;
-    flex-direction: column;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    flex-direction: column;
+    color: white;
 }
 
-#title{
+.container .card{
     position: relative;
-    bottom: 30%;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px ;
+    text-align: center;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
 }
+
 
 .cards{
     display: flex;
     text-align: left;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.content{
+    padding: 10px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 
@@ -179,6 +207,10 @@ header a{
 @media only screen and (max-width: 870px) {
     .banner{
         flex-direction: column;
+    }
+
+    #about{
+        height: fit-content;
     }
 }
 
