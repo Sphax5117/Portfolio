@@ -180,10 +180,6 @@ header a{
     .banner{
         flex-direction: column;
     }
-
-    .preloader{
-        position: relative;
-    }
 }
 
 @media only screen and (max-width: 600px) {
