@@ -144,7 +144,7 @@ header a{
 
 .content{
     padding: 10px;
-    transform: translateY(100px);
+    transform: translateY(400px);
     opacity: 0;
     transition: 0.5s;
 }
@@ -154,13 +154,13 @@ header a{
     opacity: 1;
 }
 
-.cardTitle{
-    text-align: center;
-    opacity: 1;
+.card:hover #cardTitle {
+    display: none;
 }
 
-.container .card:hover .cardTitle{
-    opacity: 0;
+#cardTitle{
+    margin-top: 60%;
+    transition: 0.5s;
 }
 
 .preloader{
