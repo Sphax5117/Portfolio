@@ -182,7 +182,7 @@ header a{
 #experience{
     display: flex;
     flex-wrap: wrap;
-    margin: 250px 20px;
+    margin: 250px 20px 100px;
 }
 
 #experience img{
@@ -203,13 +203,27 @@ header a{
 }
 
 #portfolio{
-    display: grid;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.imgGrid{
+    flex-wrap: wrap;
 }
 
 #portfolio img{
-    border-radius: 2px;
-    width: 300px;
-    height: auto;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+}
+
+#portfolio h2{
+    color: #47814A;
+    font-size: 38px;
+    font-weight: lighter;
 }
 
 .preloader{
@@ -317,5 +331,12 @@ header a{
     .icons{
         flex-direction: row;
         position: initial;
+    }
+
+    
+
+    #portfolio img, #experience img{
+        width: 250px;
+        height: 200px;
     }
 }   
