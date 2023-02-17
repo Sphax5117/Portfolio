@@ -9,7 +9,7 @@ body{
 
 a{
     text-decoration: dashed;
-    color: #add2ae;
+    color: white;
     font-weight: bold;
 }
 
@@ -177,6 +177,29 @@ header a{
     text-align: left;
     display: flex;
     flex-direction: row;
+}
+
+.experience{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 250px 20px;
+}
+
+.experience img{
+    width: 350px;
+    height: auto;
+    margin: 20px;
+}
+
+.experience h2{
+    font-size: 42px;
+    color: #47814A;
+    font-weight: lighter;
+}
+
+.experience a{
+    color: black;
+    font-weight: bold;
 }
 
 .preloader{
