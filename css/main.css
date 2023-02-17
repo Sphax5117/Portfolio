@@ -179,27 +179,37 @@ header a{
     flex-direction: row;
 }
 
-.experience{
+#experience{
     display: flex;
     flex-wrap: wrap;
     margin: 250px 20px;
 }
 
-.experience img{
+#experience img{
     width: 350px;
     height: auto;
     margin: 20px;
 }
 
-.experience h2{
+#experience h2{
     font-size: 42px;
     color: #47814A;
     font-weight: lighter;
 }
 
-.experience a{
+#experience a{
     color: black;
     font-weight: bold;
+}
+
+#portfolio{
+    display: grid;
+}
+
+#portfolio img{
+    border-radius: 2px;
+    width: 300px;
+    height: auto;
 }
 
 .preloader{
