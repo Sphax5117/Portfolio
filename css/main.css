@@ -7,6 +7,12 @@ body{
     padding: 0;
 }
 
+a{
+    text-decoration: dashed;
+    color: #add2ae;
+    font-weight: bold;
+}
+
 header{
     position: relative;
     z-index: 10;
@@ -87,7 +93,7 @@ header a{
     width: 600px;
     height: 600px;
     border-radius: 50%;
-    background-color: #FCE7BF;
+    background-color: #EFCA84;
     overflow-x: hidden;
     z-index: 5;
     opacity: 0;
@@ -101,7 +107,7 @@ header a{
     width: 600px;
     height: 600px;
     border-radius: 50%;
-    background-color: #FCE7BF;
+    background-color: #EFCA84;
     overflow: visible;
     z-index: 5;
     opacity: 0;
@@ -147,7 +153,11 @@ header a{
     transform: translateY(400px);
     opacity: 0;
     transition: 0.5s;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .container .card:hover .content{
     transform: translateY(0px);
@@ -161,6 +171,12 @@ header a{
 #cardTitle{
     margin-top: 60%;
     transition: 0.5s;
+}
+
+.tech{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
 }
 
 .preloader{
