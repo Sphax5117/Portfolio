@@ -15,22 +15,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hausmann Tom</title>
+    <link rel="script" href="language.js">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/x-icon" href="/face.svg">
 </head>
 
-<body>
+<body onload="initMap()">
+    <div id="map"></div>
     <div class="preloader">
         <div class="loading_text">
             LOADING 
         </div>
     </div>
     <header>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <div class="langWrap">
+            <a href="#" language="french">Fr</a>
+            <a href="#" language="english" class="active">En</a>
+        </div>
+        <div class="buttons">
+            <a class="about" href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="#"><img src="moon.svg" alt=""></a>
     </header>
+	</div>
     <section class="banner">
         <div class="icons">
             <a href="https://www.instagram.com/tacoskebabs/"><img src="instagram.svg" alt="instagram"></a>
@@ -40,8 +50,8 @@
         </div>
         <img id="face" src="face.png" alt="face of Tom Hausmann">
         <div class="text">
-            <p>Hello, i'm</p>
-            <h1>Tom Hausmann, <br> Young <span style="color: #47814A">website builder</span></h1>
+            <p class="hello">Hello, i'm</p>
+            <h1 class="young">Tom Hausmann, <br> Young <span style="color: #47814A">website builder</span></h1>
             <p class="intro">I’m a 16 years old  web and mobile developper ! I’m young, ambitious and motivated to build your website or your app ! 
                 I’m currently learning coding in Poitiers, France.</p>
         </div>
@@ -50,15 +60,13 @@
     <section id="about">
         <div class="circleLeft"></div>
         <div class="container">
-            <h2 id="title">Who am I ?</h2>
+            <h2 class="title">Who am I ?</h2>
             <div class="cards">
                 <div class="card">
-                    <h2 id="cardTitle">A computer enthusiast</h2>
+                    <h2 class="censthusiast2" id="cardTitle">A computer enthusiast</h2>
                     <div class="content">
-                        <h3>A computer enthusiast</h3>
-                        <p>Since i’m 7, i’ve always been interested into computer science 💻</p>
-                        <p>I created a lot of projects, and each of them brought me experience ! (you can see them in my <a href="#portfolio">portfolio</a> )</p>
-                        <p>Here are the technologies that i work with :</p>
+                        <h3 class="censthusiast">A computer enthusiast</h3>
+                        <p class="csP">Since i’m 7, i’ve always been interested into computer science 💻 <br> <br> I created a lot of projects, and each of them brought me experience ! (you can see them in my <a href="#portfolio">portfolio</a> ) <br> <br> Here are the technologies that i work with :</p>
                         <div class="tech">
                             <ul>
                                 <li>Django</li>
@@ -146,48 +154,10 @@
                 <p class="createdBy">Created by Tom Hausmann</p>
             </div>
         </section>
+        <script src="language.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
-            PaceOptions = {
-                ajax: true,  //Checks AJAX requests
-                document: true //Document is ready
-            };
-            Pace.on('done', () => {
-                gsap.timeline()
-                .to('.pace', {
-                    transform: 'scale(10, 1)',
-                    duration: 3,
-                }, "+=.2")
-                .to('header', {
-                    opacity: 1,
-                    ease: "BezierEasing(0.19,1,0.22,1)"
-                },)
-                .to('section', {
-                    opacity: 1,
-                    ease: "BezierEasing(0.19,1,0.22,1)"
-                },)
-                .to('.circleLeft', {
-                    opacity:1,
-                    ease: "BezierEasing(0.19,1,0.22,1)"
-                },)
-                .to('.circleRight', {
-                    opacity:1,
-                    ease: "BezierEasing(0.19,1,0.22,1)"
-                },)
-                .to('.pace', {
-                    duration: 1, 
-                    height: "100%"
-                }, "-=2.5"  )
-                .to('.loading_text', {
-                    delay: .2,
-                    duration: 3,
-                    opacity: 0,
-                    yPercent: -400,
-                    ease: "BezierEasing(0.19,1,0.22,1)"
-                }, 'p')
-            });
-        </script>
+        <script src="loader.js"></script>
     </footer>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>

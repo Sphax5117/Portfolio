@@ -15,15 +15,24 @@ a{
     font-weight: bold;
 }
 
+a.active{
+    color: rgb(156, 123, 33);
+}
+
+
 header{
     position: relative;
     z-index: 10;
     opacity: 0;
     padding: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
+header a {
+    color: #47814A;
+}
 .icons{
     display: flex;
     flex-direction: column;
@@ -67,7 +76,7 @@ section{
     margin: 7px;
 }
 
-header a{
+.buttons a{
     text-decoration: none;
     color: #47814A;
     margin:20px;
@@ -285,7 +294,7 @@ header a{
 .mail{
     margin: 35px;
     margin-right: 10px;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-decoration: underline;
     font-weight: lighter;
 }
