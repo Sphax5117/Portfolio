@@ -29,16 +29,16 @@
     </div>
     <header>
         <div class="langWrap">
-            <a href="#" language="french">Fr</a>
-            <a href="#" language="english" class="active">En</a>
+            <a href="#" language="french" class="languageButt">Fr</a>
+            <a href="#" language="english" class="active" class="languageButt">En</a>
         </div>
         <div class="buttons">
             <a class="about" href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a class="xp" href="#experience">Experience</a>
+            <a class="portfo" href="#portfolio">Portfolio</a>
+            <a class="contac" href="#contact">Contact</a>
         </div>
-        <a href="#"><img src="moon.svg" alt=""></a>
+        <img src="moon.svg" alt="" id="icon">
     </header>
 	</div>
     <section class="banner">
@@ -80,12 +80,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <h2 id="cardTitle">A designer</h2>
+                    <h2 class="designer" id="cardTitle">A designer</h2>
                     <div class="content">
-                        <h3>A designer</h3>
-                        <p>I also love being part of the design, even if it’s not my original job.</p>
-                        <p>If you wish to <a href="#contact">contact me</a>, we could negotiate the design of your website 🖌️</p>
-                        <p>For example, i designed this website all by myself ! <br> I know how to use general design assets like :</p>
+                        <h3 class="designer2">A designer</h3>
+                        <p class="desDes">I also love being part of the design, even if it’s not my original job. <br> <br> If you wish to <a href="#contact">contact me</a>, we could negotiate the design of your website 🖌️ <br> For example, i designed this website all by myself ! <br> I know how to use general design assets like :</p>
                         <div class="tech">
                             <ul>
                                 <li>Blender</li>
@@ -98,13 +96,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <h2 id="cardTitle">An entrepreneur</h2>
+                    <h2 class="entrepreneur" id="cardTitle">An entrepreneur</h2>
                     <div class="content">
-                        <h3>An entrepreneur</h3>
-                        <p>I’m really interested in building a start-up ! </p>
-                        <p>I'll create a page soon to describe my project :)</p>
-                        <p>As i describe it in <a href="#experience">My experience</a>, i’ve done a few contests about entrepreneuship </p>
-                        <p>I would be really excited to work in a start-up or a growing company, so if you want to contact me, i’m open to offers !</p>
+                        <h3 class="entrepreneur2">An entrepreneur</h3>
+                        <p class="entreDes">I’m really interested in building a start-up ! 🏢 <br> <br> I'll create a page soon to describe my project :) <br><br> As i describe it in <a href="#experience">My experience</a>, i’ve done a few contests about entrepreneuship <br><br> I would be really excited to work in a start-up or a growing company, so if you want to contact me, i’m open to offers !</p>
                     </div>
                 </div>
             </div>
@@ -114,19 +109,19 @@
     <section id="experience">
         <img src="images/google.png" alt="Google Ateliers Numériques">
         <div>
-            <h2>My experience</h2>
-            <p>I’m only 16, but i’ve already worked with few people ! I also have done some contests about entrepreneurship 🖥️
+            <h2 class="xp2">My experience</h2>
+            <p class="exDes">I’m 16, but i’ve already worked with few people ! I also have done some contests about entrepreneurship 🖥️
                 <br>
                 <br>
                 Here are my experiences :</p>
             <div class="myExperiences">
                 <ul>
-                    <li><a href="https://startuptoimeme.com/">StartUp toi-même</a> 2021 contest</li>
-                    <li><a href="https://www.zimages.fr/">Zimages</a>  internship and <a href="https://sphax5117.github.io/RapportStage/"> website creation </a></li>
+                    <li class="SUTM"><a href="https://startuptoimeme.com/">StartUp toi-même</a> 2021 contest</li>
+                    <li class="Zmg"><a href="https://www.zimages.fr/">Zimages</a>  internship and <a href="https://sphax5117.github.io/RapportStage/"> website creation </a></li>
                 </ul>
                 <ul>
-                    <li>Les Portrait de Joy website creation</li>
-                    <li>Youtube channel </li>
+                    <li class="PODJ">Les Portrait de Joy website creation</li>
+                    <li class="ytb"><a href="https://www.youtube.com/channel/UCsA-TlQxgvxeX_-CYru0iQQ">Youtube</a>  channel </li>
                 </ul>
             </div>
         </div>
@@ -173,6 +168,7 @@
     gyroscopeMaxAngleY:     60,  
     });
     </script>
+    <script src="darktheme.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>

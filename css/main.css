@@ -2,16 +2,32 @@
     font-family: "Helvetica Neue", sans-serif;
 }
 
+:root{
+    --primary-color:  #F3F3DE;
+    --secondary-color: #47814A;
+    --icons-brightness: 100%;
+    --text-color: #140C04;
+}
+.darktheme{
+    --primary-color:  #140C04;
+    --secondary-color: #47814A;
+    --text-color: white;
+    --icons-brightness: 1000000%;
+}
+
+
 body{
     margin: 0;
     padding: 0;
-    background-color: #F3F3DE;
+    background-color: var(--primary-color);
     overscroll-behavior-y: contain;
+    color: var(--text-color);
 }
+
 
 a{
     text-decoration: dashed;
-    color: white;
+    color: var(--text-color);
     font-weight: bold;
 }
 
@@ -31,7 +47,11 @@ header{
 }
 
 header a {
-    color: #47814A;
+    color: var(--secondary-color);
+}
+
+#icon{
+    cursor: pointer;
 }
 .icons{
     display: flex;
@@ -42,8 +62,13 @@ header a {
     transform: translateY(-50%);
 }
 
+header img{
+    filter: brightness(var(--icons-brightness));
+}
+
 .icons img{
     margin-bottom: 8px;
+    filter: brightness(var(--icons-brightness));
 }
 
 section{
@@ -78,14 +103,14 @@ section{
 
 .buttons a{
     text-decoration: none;
-    color: #47814A;
+    color: var(--secondary-color);
     margin:20px;
     font-size: 20px;
 
 }
 
 #about {
-    background: #47814A;
+    background: var(--secondary-color);
     height: 800px;
     display: flex;
     justify-content: space-evenly;
@@ -204,12 +229,12 @@ section{
 
 #experience h2{
     font-size: 42px;
-    color: #47814A;
+    color: var(--secondary-color);
     font-weight: lighter;
 }
 
 #experience a{
-    color: black;
+    color: var(--text-color);
     font-weight: bold;
 }
 
@@ -232,14 +257,14 @@ section{
 }
 
 #portfolio h2{
-    color: #47814A;
+    color: var(--secondary-color);
     font-size: 38px;
     font-weight: lighter;
 }
 
 #contact{
     height: 500px;
-    background-color: #47814A;
+    background-color: var(--secondary-color);
     color: white;
     display: flex;
     flex-direction: column;
@@ -297,12 +322,13 @@ section{
     font-size: 1.5rem;
     text-decoration: underline;
     font-weight: lighter;
+    color: white;
 }
 
 .preloader{
     width: 100%;
     height: 100%;
-    background: #47814A;
+    background: var(--secondary-color);
     position: fixed;
     display: grid;
     align-items: center;
@@ -312,7 +338,7 @@ section{
 
 .loading_text{
     font-weight: 700;
-    color: #F3F3DE;
+    color: var(--primary-color);
     letter-spacing: 30px;
     margin-bottom: 20px;
     justify-content: center;
@@ -334,7 +360,7 @@ section{
     border: 0;
     height: 1px;
     overflow: hidden;
-    background-color: #47814A;
+    background-color: var(--secondary-color);
 }
 
 .pace .pace-progress{
@@ -345,7 +371,7 @@ section{
     right: 100%;
     height: 100%;
     width: 100%;
-    background: #F3F3DE;
+    background: var(--primary-color);
 }
 
 @media only screen and (max-width: 870px) {
