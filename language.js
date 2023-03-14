@@ -1,5 +1,5 @@
 const langEl = document.querySelector('.langWrap');
-const link = document.querySelectorAll('.languageButt');
+const link = document.querySelectorAll('#languageButt');
 const helloEl = document.querySelector('.hello');
 const youngEl = document.querySelector('.young');
 const aboutEl = document.querySelector('.about');

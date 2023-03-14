@@ -2,6 +2,33 @@
     font-family: "Helvetica Neue", sans-serif;
 }
 
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #f0efef rgb(255, 255, 255);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: none;
+    z-index: 1;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 80px;
+    border: 5px solid #776a6a76;
+    height: 20px;
+  }
+  *::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    color: white;
+  }
+
 :root{
     --primary-color:  #F3F3DE;
     --secondary-color: #47814A;
@@ -400,7 +427,7 @@ section{
     }
 
     header{
-        display: grid;
+        display: flex;
         justify-content: center;
         text-align: center;
     }
